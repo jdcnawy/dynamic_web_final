@@ -6,8 +6,8 @@ const UserProfileCard = ({ user }) => {
     <div className={styles.container}>
       <div className={styles.UserProfile}>
         <h2>User Profile</h2>
-        <h2>Username: {user?.name}</h2>
-        <p>About Me: {user?.aboutMe}</p>
+        <h2>{user?.name}</h2>
+        <p>{user?.aboutMe}</p>
       </div>
     </div>
   );

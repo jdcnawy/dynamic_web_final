@@ -12,20 +12,15 @@ export default function Dashboard() {
 
   useEffect(() => {
     const auth = getAuth();
-
-    // Listen for changes in authentication state
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        // User is signed in
         setCurrentUser(user.uid);
       } else {
-        // No user is signed in
         setCurrentUser(null);
         router.push("/login");
       }
     });
 
-    // Cleanup function
     return () => {
       unsubscribe();
     };
@@ -52,7 +47,7 @@ export default function Dashboard() {
 
   return (
     <main className={styles.Dashboard}>
-      <h1>Dashboard</h1>
+      <h1>Your Reviews</h1>
       {allPosts.map((post, i) => (
         <PostCard post={post} key={i} />
       ))}

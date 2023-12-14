@@ -6,7 +6,7 @@ const CreatePostForm = ({ createPostFunction }) => {
 
   return (
     <div className={styles.CreatePostForm}>
-      <h2>Create a Post!</h2>
+      <h2>Write a Review!</h2>
       <form onSubmit={(e) => createPostFunction(e, imageUpload)}>
       <label htmlFor="albumTitle">Album Title</label>
         <input type="text" id="albumTitle" name="albumTitle" />
@@ -27,7 +27,7 @@ const CreatePostForm = ({ createPostFunction }) => {
             setImageUpload(e.target.files[0]);
           }}
         />
-        <button type="submit">Create Post</button>
+        <button type="submit">Publish</button>
       </form>
     </div>
   );
