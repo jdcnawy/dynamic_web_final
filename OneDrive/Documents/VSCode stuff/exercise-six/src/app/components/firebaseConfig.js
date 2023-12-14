@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: `AIzaSyBz_TxiqHtpoVS5GqUGIwFfV-FDXtLx97g`,
-    authDomain: "exercise-six-fall-2023-e28de.firebaseapp.com",
-    projectId: "exercise-six-fall-2023-e28de",
-    storageBucket: "exercise-six-fall-2023-e28de.appspot.com",
-    messagingSenderId: "806461970679",
-    appId: "1:806461970679:web:42b79eb14be44a61ee1bf2"
-  };
+  apiKey: "AIzaSyC1xMn4CwlwrBEaW1Nz9fCo4n6s0bno_N0",
+  authDomain: "final-project-fall-2023-38ef3.firebaseapp.com",
+  projectId: "final-project-fall-2023-38ef3",
+  storageBucket: "final-project-fall-2023-38ef3.appspot.com",
+  messagingSenderId: "512987834883",
+  appId: "1:512987834883:web:5fc2c30d431e99837abc36"
+};
 
 export default firebaseConfig;
